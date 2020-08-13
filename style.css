@@ -1,0 +1,319 @@
+
+
+/* ==========
+   Desktop Mode
+   ============ */
+
+
+
+.container-flex{
+    display: flex;
+
+}
+.container {
+    width: 95%;
+    margin: auto;
+
+}
+
+body{
+
+        background: url("images/bg-pattern-desktop.svg");
+        font-family: 'Josefin Sans', sans-serif;
+        box-sizing: border-box;
+        margin: 0em;
+
+}
+
+nav{
+margin:   4em 10.4em;
+
+}
+
+main{
+margin: 4em 10.5em;
+width: 60%;
+
+}
+
+
+
+.article-title{
+    font-family:"calibri";
+
+}
+
+h1{
+    margin-top: 1.5em;
+    margin-bottom: 0.3em;
+    font-size:4rem;
+    letter-spacing: 0.8rem;
+}
+span {
+    font-family: arial narrow;
+    font-weight: 100;
+    color: hsl(0, 36%, 70%);
+    font-style:normal;
+}
+
+.article-body{
+    font-size:1.3rem ;
+    font-style: thin;
+    line-height: 2rem;
+    color: hsl(0, 36%, 70%)
+}
+
+.email-input{
+  outline: none;
+
+  border: 2px solid hsla(0, 36%, 70%, 0.274);
+  width: 80%;
+  padding: 14px 6px 14px 28px;
+  border-radius: 40px;
+}
+
+.email-input::placeholder {
+    color: hsla(0, 36%, 70%, 0.274);
+    padding-left: 0px;
+}
+
+.email-input:focus {
+    outline: none;
+    border: 2px solid hsla(0, 93%, 68%, 0.61);
+    transition: all 0.6s ease;
+}
+
+
+
+
+
+
+
+
+
+.button-input {
+    outline: none;
+    padding: 16px;
+    width: 84px;
+    border: none;
+    border-radius: 40px;
+
+    cursor: pointer;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    margin-left: -50px;
+    box-shadow: 4px 12px 16px hsla(0, 47%, 80%, 0.521);
+}
+
+.button-input:hover {
+    background: linear-gradient(135deg, hsl(0, 38%, 94%), hsl(0, 100%, 88%));
+    box-shadow: 2px 12px 20px hsla(0, 20%, 42%, 0.445);
+    transition: all 0.6s ease;
+}
+
+.fa {
+    color: white;
+}
+
+
+.error {
+    color: hsla(0, 100%, 62%, 0.61);
+    font-size: 14px;
+
+    text-align: left;
+    margin-left: 7.8%;
+    margin-top: 8px;
+}
+
+.hero-img{
+    background-image: cover;
+ height: 100%;
+
+}
+
+.hero-mob{
+    display: none;
+}
+
+
+/*===============
+first Media Query 1390px
+================*/
+
+
+
+
+@media(max-width:1390px){
+    .hero-img{
+        background-image: cover;
+     height: 680.04px;
+     width: 100%;
+}
+
+@media(max-width:375px){
+    .container-flex{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+    body{
+        box-sizing: border-box;
+    }
+     .logo{
+         width: 80%;
+     }
+
+
+
+    h1{
+        letter-spacing: 1%;
+        font-size: 2.5em;
+    }
+    .article-body{
+        font-size: 1rem;
+    }
+    /* .email-input{
+        width: 30%;
+    } */
+/*
+    .button-input{
+        width: 4%;
+    } */
+
+.hero-img{
+    background-image: cover;
+    height: 100%;
+}
+
+main{
+    /* margin: 4em auto; */
+    width: 70%;
+    }
+
+
+
+}
+
+
+
+/*===============
+Media Query 414px
+================*/
+
+
+@media(max-width:414px){
+    .container-flex{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+
+body{
+        box-sizing: border-box;
+    }
+
+     
+
+     .article-title{
+    width: 100%;
+
+     }
+
+    h1{
+        letter-spacing: .1rem;
+    }
+
+    .email-input{
+        width: 75%;
+    }
+    /* .button-input {
+        width: 24% !important;
+    } */
+
+
+
+
+main{
+    margin: 4em auto;
+    width: 80%;
+
+}
+     
+}
+
+
+
+/*===============
+Media Query 768px
+================*/
+
+
+
+
+.hero-img{
+    background-image: cover;
+    width: 100%;
+}
+
+/* .email-input{
+    width: 65%;
+} */
+
+/* .button-input{
+    width: 18%;
+} */
+
+
+
+}
+
+
+/*===============
+Media Query 990px
+================*/
+
+@media(max-width:990px){
+    .container-flex{
+       flex-direction: column;
+
+    }
+    .hero-img{
+        background-image: cover;
+        height: 100%;
+        display: none;
+    }
+    
+    .hero-mob{
+        display: block;
+        margin-top: 5rem ;
+        width: 100%;
+    }
+    .sub-main {
+        order: 1;
+    }
+
+    .container{
+        order: 2;
+    } 
+    .logo{
+
+        width: auto;
+        margin-left: -8.6em;
+        position: absolute;
+        top: 1rem;
+     }
+     h1 {
+         text-align: center;
+     }
+    
+    
+    .button-input{
+        width: 60px;
+    }
+
+
+
+
+}
